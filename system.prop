@@ -1,0 +1,14 @@
+# Additional Properties
+ro.vendor.mtk_tee_gp_support=1
+ro.hardware.kmsetkey=trustonic
+ro.vendor.mtk_trustonic_tee_support=1
+ro.hardware.gatekeeper=trustonic
+
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.options=::v2
+keymaster_ver=4.1
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
