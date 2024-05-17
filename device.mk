@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
     update_verifier \
     update_engine_sideload
 
+# MTK PlPath Utils
+PRODUCT_PACKAGES += \
+    mtk_plpath_utils.recovery
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 31
 
