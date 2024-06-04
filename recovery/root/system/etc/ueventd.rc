@@ -47,6 +47,10 @@ subsystem dma_heap
 /dev/dma_heap/system-uncached      0444   system     system
 /dev/dma_heap/system-secure        0444   system     system
 
+#SDD: add ANDROIDRBE-357 by jixue.tang for system monitor feature. Start
+/dev/ensignal   0666   root   root
+#SDD: add ANDROIDRBE-357 by jixue.tang for system monitor feature. End
+
 # kms driver for drm based gpu
 /dev/dri/*                0666   root       graphics
 
@@ -67,8 +71,9 @@ subsystem dma_heap
 # CDMA radio interface MUX
 /dev/ppp                  0660   radio      vpn
 
-/dev/kvm                  0600   system     system
-/dev/vhost-vsock          0600   system	    system
+# Virtualisation is managed by Virt Manager
+/dev/kvm                  0600   virtmanager root
+/dev/vhost-vsock          0600   virtmanager root
 
 # sysfs properties
 /sys/devices/platform/trusty.*      trusty_version        0440  root   log
@@ -79,7 +84,3 @@ subsystem dma_heap
 /sys/devices/system/cpu/cpu*   cpufreq/scaling_min_freq   0664  system system
 /sys/devices/virtual/misc/uhid/*/leds/* brightness   0664  system system
 /sys/devices/virtual/misc/uhid/*/leds/* multi_intensity   0664  system system
-
-#SDD: added by long.jin5 for system monitor feature. Start
-/dev/ensignal   0666   root   root
-#SDD: added by long.jin5 for system monitor feature. End
