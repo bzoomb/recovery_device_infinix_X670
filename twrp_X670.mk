@@ -24,5 +24,5 @@ $(call inherit-product, device/infinix/X670/device.mk)
 PRODUCT_DEVICE := X670
 PRODUCT_NAME := twrp_X670
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix Note 12
+PRODUCT_MODEL := Infinix NOTE 12
 PRODUCT_MANUFACTURER := infinix

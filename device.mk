@@ -48,6 +48,9 @@ PRODUCT_PACKAGES += \
 # API
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 31
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -61,5 +64,3 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
-# VNDK
-PRODUCT_TARGET_VNDK_VERSION := 31
