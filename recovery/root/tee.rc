@@ -37,3 +37,10 @@ on property:vold.decrypt=trigger_restart_framework
     write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry ++ (FDE encrypted)"
     mkdir /data/vendor/mcRegistry 0775 system system
     write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry -- (FDE encrypted)"
+
+on property:sys.boot_completed=1
+    chown system system /data/vendor/mcRegistry/TbStorage/Store_0.tf
+    chmod 0600 /data/vendor/mcRegistry/TbStorage/Store_0.tf
+
+    chown system system /data/vendor/mcRegistry/TbStorage
+    chmod 0700 /data/vendor/mcRegistry/TbStorage
