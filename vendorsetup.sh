@@ -139,10 +139,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_DELETE_INITD_ADDON=0
     # SAR detection.
 	export OF_USE_TWRP_SAR_DETECT=1
-    # Enable the flashlight feature.
-	export OF_FLASHLIGHT_ENABLE=1
-	# Set custom flashlight path.
-	export OF_FL_PATH1="/sys/devices/virtual/torch/torch/torch_level"
     # MIUI OTA, and dm-verity/forced-encryption patching will be disabled
 	export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 
